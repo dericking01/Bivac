@@ -29,4 +29,17 @@
       pointer-events: none;
     }
   }
+  /* Custom Gallery Styles */
+  .gallery-item {
+    margin-bottom: 30px;
+  }
+
+  .gallery-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
   

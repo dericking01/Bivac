@@ -30,6 +30,20 @@
   <!-- custom files for Contact form -->
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 
 <body class="index-page">
@@ -48,6 +62,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -497,6 +512,21 @@
 
     </section><!-- /More Features Section -->
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-bg">
+        <div class="container" data-aos="fade-up">
+    
+        <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Check out our stunning gallery</p>
+        </div>
+    
+        <div class="row gallery-container" data-aos="fade-up" data-aos-delay="100">
+            <!-- Gallery Items will be dynamically inserted here by JavaScript -->
+        </div>
+    
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -515,10 +545,9 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <p>BIVAC Company Tanzania Limited</p>
-              <p>
-                Plot 268, TEMDO Complex, Njiro – Arusha |
-                P. O. Box 6111, Arusha
+              <p>BIVAC Company Tanzania Limited <br>
+                Plot 268, TEMDO Complex, <br> P. O. Box 6111,<br>
+                Njiro – Arusha
               </p>
             </div>
           </div><!-- End Info Item -->
@@ -583,6 +612,34 @@
       </div>
 
     </section><!-- /Contact Section -->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const galleryContainer = document.querySelector('.gallery-container');
+          const numberOfImages = 49; // Number of images in the gallery
+      
+          for (let i = 1; i <= numberOfImages; i++) {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'col-lg-4 col-md-6 gallery-item';
+      
+            const link = document.createElement('a');
+            link.href = `assets/img/gallery/${i}.jpg`;
+            link.setAttribute('data-lightbox', 'gallery');
+            link.setAttribute('data-title', `Image ${i}`);
+      
+            const img = document.createElement('img');
+            img.src = `assets/img/gallery/${i}.jpg`;
+            img.alt = `Image ${i}`;
+            img.className = 'img-fluid';
+      
+            link.appendChild(img);
+            galleryItem.appendChild(link);
+            galleryContainer.appendChild(galleryItem);
+          }
+        });
+    </script>
+
 
   </main>
 
