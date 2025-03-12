@@ -43,3 +43,234 @@
     transform: scale(1.05);
   }
   
+  /* Volunteer Section Styling */
+  #volunteer {
+    background: linear-gradient(135deg, #f9f9f9, #e6f4ea); /* Light gradient background */
+    padding: 60px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  #volunteer .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  #volunteer .section-title p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  #volunteer .form-group {
+    margin-bottom: 20px;
+  }
+
+  #volunteer .form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+
+  #volunteer .form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  #volunteer .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+  }
+
+  #volunteer .form-check-input {
+    margin-top: 0.3em;
+  }
+
+  #volunteer .form-check-label {
+    margin-left: 8px;
+    color: #555;
+  }
+
+  #volunteer .btn-primary {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  #volunteer .btn-primary:hover {
+    background-color: #218838;
+  }
+
+  #volunteer .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.9rem;
+  }
+
+  #volunteer .was-validated .form-control:invalid {
+    border-color: #dc3545;
+  }
+
+  #volunteer .was-validated .form-control:valid {
+    border-color: #28a745;
+  }
+
+  /* Donation Section */
+  .donation {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+  }
+
+  .donation .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .donation .section-title p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  .donation .donation-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .donation .donation-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .donation .donation-box h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  .donation .donation-box p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .donation .btn-donate {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .donation .btn-donate:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 767px) {
+    .donation .donation-box {
+      margin-bottom: 20px;
+    }
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #volunteer .section-title h2 {
+    font-size: 2rem;
+  }
+
+  #volunteer .section-title p {
+    font-size: 1rem;
+  }
+
+  #volunteer .form-control {
+    font-size: 0.9rem;
+  }
+
+  #volunteer .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Team Section Styles */
+  .team {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+
+  .team .section-title {
+    margin-bottom: 50px;
+  }
+
+  .team .section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .team .section-title p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  .team .team-member {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .team .team-member:hover {
+    transform: translateY(-10px);
+  }
+
+  .team .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .team .team-member h4 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .team .team-member p {
+    font-size: 1rem;
+    color: #888;
+  }
+
+  .team .team-member:hover h4 {
+    color: #007bff;
+  }
+
+  @media (max-width: 767px) {
+    .team .team-member {
+      margin-bottom: 30px;
+    }
+  }
+
+}

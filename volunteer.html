@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bivac</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/bvlogo.png" rel="icon">
+  <link href="assets/img/bvlogo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- custom files for Contact form -->
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/bvlogo.png" alt="">
+        <!-- <h1 class="sitename">Bivac</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Features</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="index.html">Gallery</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">Contact</a>
+
+    </div>
+  </header>
+  <br><br>
+
+  <main class="main">
+    <section id="volunteer" class="volunteer-section py-5">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+            <h2>Bivac Volunteer Application</h2>
+            <p>Join us in making a difference through sustainable agriculture and nutrition.</p>
+          </div>
+      
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+             <form id="my-form" action="https://formspree.io/f/mwpkkywd" method="POST" role="form" id="my-form"  class="php-email-form">
+
+      
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <textarea class="form-control" id="address" name="address" rows="2" required></textarea>
+                  <div class="invalid-feedback">Please enter your address.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label>Preferred Contact Method</label>
+                  <div class="d-flex">
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="contactMethod" id="emailContact" value="Email" required>
+                      <label class="form-check-label" for="emailContact">Email</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactMethod" id="phoneContact" value="Phone" required>
+                      <label class="form-check-label" for="phoneContact">Phone</label>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="availability">Availability</label>
+                  <input type="text" class="form-control" id="availability" name="availability" placeholder="Days and Times" required>
+                  <div class="invalid-feedback">Please specify your availability.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label>Areas of Interest</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interest[]" value="Nutrition and Agriculture" id="nutrition">
+                    <label class="form-check-label" for="nutrition">Nutrition and Agriculture</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interest[]" value="Event Coordination" id="event">
+                    <label class="form-check-label" for="event">Event Coordination</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interest[]" value="Community Outreach" id="community">
+                    <label class="form-check-label" for="community">Community Outreach</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interest[]" value="Fundraising" id="fundraising">
+                    <label class="form-check-label" for="fundraising">Fundraising</label>
+                  </div>
+                  <div class="form-group mt-2">
+                    <label for="otherInterest">Other (please specify)</label>
+                    <input type="text" class="form-control" id="otherInterest" name="interest_other">
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="skills">Skills and Experience</label>
+                  <textarea class="form-control" id="skills" name="skills" rows="3"></textarea>
+                </div>
+      
+                <div class="form-group">
+                  <label for="emergencyName">Emergency Contact Name</label>
+                  <input type="text" class="form-control" id="emergencyName" name="emergencyName" required>
+                  <div class="invalid-feedback">Please enter an emergency contact name.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="emergencyPhone">Emergency Contact Phone</label>
+                  <input type="tel" class="form-control" id="emergencyPhone" name="emergencyPhone" required>
+                  <div class="invalid-feedback">Please enter an emergency contact phone.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="signature">Signature</label>
+                  <input type="text" class="form-control" id="signature" name="signature" required>
+                  <div class="invalid-feedback">Please enter your signature.</div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <input type="date" class="form-control" id="date" name="date" required>
+                  <div class="invalid-feedback">Please select a date.</div>
+                </div>
+
+                <div id="status"></div>
+                <div class="sent-message">Your Application has been sent. Thank you!</div>
+                <div class="error-message">Sorry, an error occurred. Please try again later.</div>
+                <button type="submit" class="btn btn-primary btn-block mt-3">Submit Application</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        // Bootstrap form validation
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">BIVAC Company Ltd</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>
+              Plot 268, TEMDO Complex, Njiro – Arusha |
+              P. O. Box 6111, Arusha
+            </p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+255 758 929 696 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +255 621 591 871</span></p>
+            <p><strong>Email:</strong> <span>info@bivac.co.tz</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/bivaclishe/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/bivac-tanzania-067b4723b/?originalSubdomain=tz"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Nutritional Products</a></li>
+            <li><a href="#">Agricultural Consultancy</a></li>
+            <li><a href="#">Contract Farming</a></li>
+            <li><a href="#">Community Engagement</a></li>
+            <li><a href="#">Research & Development</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Bivac Company Ltd</strong><br><span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
